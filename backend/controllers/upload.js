@@ -10,7 +10,6 @@ export async function upload(req, res, next) {
 			});
 			return;
 		}
-		console.log(file);
 		const companies = await parseCSVFile(file);
 		res.json({
 			data: companies,

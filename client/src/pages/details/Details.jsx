@@ -133,7 +133,12 @@ function Details() {
                     </Box>
 
                     <Box as='div' className='options'>
-                        <Button className='redirectBtn' colorScheme='teal' onClick={handleRedirect}>Go back to the list</Button>
+                        {
+                            !location.state.fromDashboard ?
+                                <Button className='redirectBtn' colorScheme='teal' onClick={handleRedirect}>Go back to the list</Button>
+                            :
+                            <></>
+                        }
                         <Button className='addToDashboardBtn' colorScheme='green' rightIcon={<AddIcon />} onClick={() => handleAddToDashboard(company)}>Add to dashboard</Button>
                     </Box>
                 </Box>

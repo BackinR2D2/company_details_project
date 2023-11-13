@@ -42,7 +42,7 @@ function Dashboard() {
                   <Card width={'16em'} key={item.name}>
                       <CardHeader>
                         <Heading size='md'>
-                          <Link to={item.link} style={{color: 'blue', textDecoration: 'underline'}}>{item.name}</Link>
+                          <Link to={`/${item.link}`} state={{fromDashboard: true}} style={{color: 'blue', textDecoration: 'underline'}}>{item.name}</Link>
                         </Heading>
                         </CardHeader>
                         <CardBody>
