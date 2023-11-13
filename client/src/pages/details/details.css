@@ -1,0 +1,33 @@
+.company_metadata {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 16px 0;
+}
+
+.company_description, .company_summary {
+    margin: 18px 0 18px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em;
+    padding: 8px;
+}
+
+.noElementsFoundContainer {
+    text-align: center;
+    font-weight: 100;
+    margin-top: 28vh;
+}
+
+@media (max-width: 465px) {
+    .company_metadata, .options {
+        display: block;
+    }   
+    .redirectBtn, .addToDashboardBtn {
+        width: 100%;
+        margin: 6px;
+    }
+}
